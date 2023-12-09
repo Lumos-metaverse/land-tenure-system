@@ -225,7 +225,7 @@ function App() {
           </div>
 
           <div className="col-md-4">
-            {account === owner && 
+            {walletConnected && account === owner && 
               <div>
                 <div className="card mb-4">
                   <div className="card-body">
@@ -257,7 +257,7 @@ function App() {
               </div>
             }
 
-            {account === nextOwner &&
+            {walletConnected && account === nextOwner &&
               <div className="card">
                 <div className="card-body">
                   <p>You have been set to own this land, claim ownership</p>
