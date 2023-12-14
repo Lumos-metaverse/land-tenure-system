@@ -27,6 +27,8 @@ function App() {
 
   const web3ModalRef = useRef();
 
+  console.log(imageHash)
+
   const client = new NFTStorage({ token: process.env.REACT_APP_NFT_STORAGE_KEY });
 
   // Helper function to fetch a Provider instance from Metamask
